@@ -24,7 +24,7 @@
 <meta property="og:description" content="不仅能跨设备同步文献，还能跨操作系统喔^^">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-31T05:03:30.000Z">
-<meta property="article:modified_time" content="2023-08-31T05:25:35.395Z">
+<meta property="article:modified_time" content="2023-09-25T12:56:48.386Z">
 <meta property="article:author" content="AndroidSheep">
 <meta property="article:tag" content="zotero">
 <meta property="article:tag" content="onedrive">
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          273 字
+          1.1k 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          3 分钟
+          9 分钟
         
       </span>
     
@@ -292,8 +292,11 @@
               <div class="markdown-body">
                 
                 <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本篇文章是本博客第1篇关于「轻」技术方面的文章，「实用技术」这一个类别的文章主要会放一些我自己在尝试一些软件或者应用时发现的一些对我有帮助的tricks，希望也能够对大家有所裨益。</p>
-<p>众所周知，Zotero是一款被<del>广大科研人</del>频繁使用的一款开源文献管理软件，由于我也即将开始自己的研究生生涯，所以也开始使用起了这款软件。Zotero的好处可谓多多，配合其在浏览器上提供的「Zotero Connector」插件一起使用，<strong>你几乎可以存档网络上的一切文献、网页以及与其相关的元数据</strong>，并且对这些资源进行分门别类的管理以及笔记，从而构建属于自己的知识库。</p>
-
+<p>众所周知，Zotero是一款被<del>广大科研人</del>频繁使用的一款开源文献管理软件，由于我也即将开始自己的研究生生涯，所以也开始使用起了这款软件。Zotero的好处可谓多多，配合其在浏览器上提供的「Zotero Connector」插件一起使用，<strong>你几乎可以存档网络上的一切文献、网页以及与其相关的元数据</strong>，并且对这些资源进行分门别类的管理以及笔记，从而构建属于自己的知识库。鉴于Zotero强大的功能和庞大的开源社群，我也同样开始使用起了这款软件。</p>
+<p>在使用了一段时间的Zotero后，我享受到了其带来的便利的文献管理功能，但是也遇到了<strong>一定的问题</strong>。由于我有多台电脑（一台MacBook和一台PC），让Zotero在多台计算机设备之间进行数据的同步自然而然地成为了我的需求。Zotero本身同样也提供了自带的文献云同步的功能，<strong>但是供用户免费使用的额度只有300MB</strong>，如果同步的文件量超过了这一额定大小，则从最低档的$20&#x2F;year开始计费，<del>这对于一个贫穷的学生来说显然不是一件好事</del>。如果“随波逐流”地使用Zotero提供的云同步功能，则总会迎来超过免费存储额度的那一天，<strong>这一想法驱动着我去寻找其他的方法来有效地利用我已有的资源，以不增加额外花费的形式对Zotero提供的云同步进行替代</strong>。</p>
+<p>本质上来说，Zotero的云同步功能就是把我们存放在文献库里的文献文件以及其上的注释、笔记等信息放在一个「云盘」上，这个「云盘」中的数据允许我们在各个设备上进行存取访问，所以只要找一个云盘来替代Zotero提供的「云盘」不就好了？！这个时候我便盯上了自己已经买了几年订阅的<strong>OneDrive</strong>，1T的云存储空间我才用了小几十个G，用它来做Zotero的同步再好不过了。</p>
+<p>到此为止，我的目标就已经确定好啦，即<strong>「使用自己购买的OneDrive来对Zotero提供的云存储服务进行替代，实现跨设备之间的文献数据同步」</strong>，接下来就是找到具体的方案来完成这件事情了。在网路上也有很多人给出了使用OneDrive来对Zotero进行同步的方案，<strong>但是这些方案或多或少都存在着glitch</strong>，所以我在参考了这些方案的基础上也尝试解决它们中存在的共性问题，终于摸索出了对于我来说最为适用的完美方法XD。好啦，上面说了不少的<del>废话</del>，现在就让我们进入正题，具体地介绍这个方法是怎么实现的吧！</p>
+<h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2>
                 
               </div>
             
